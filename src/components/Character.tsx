@@ -16,7 +16,7 @@ export default function Character() {
 
   const fetchData = async () => {
     const charactersResponse = await fetch(
-      "https://rickandmortyapi.com/api/character/?page=19"
+      `https://rickandmortyapi.com/api/character/?page=${Math. floor(Math. random() * (42 - 1 + 1)) + 1}`
     );
     const responseObject = await charactersResponse.json();
     const charactersData : ICharacter[] = responseObject.results;
@@ -34,7 +34,7 @@ export default function Character() {
         <article className="character__card" key={character.id}>
 
           <div className="character__img">
-            <img src={character.image} alt="" />
+            <img src={character.image} alt="🖼️" />
           </div>
 
           <div className="character__info">
@@ -44,7 +44,7 @@ export default function Character() {
             {character.type && <p>Type: {character.type}</p>}
             <p>Gender: {character.gender}</p>
           </div>
-          
+
         </article>
 
       ))}

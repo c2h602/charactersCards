@@ -16,9 +16,13 @@
   border-radius: 10px;
   margin: 2em;
   width: 20rem;
-  height: 36rem;
+  height: 37rem;
 }
 
+.reloadBtn {
+  background-color: transparent;
+}
 
-
-
+.action__panel {
+ 
+}
