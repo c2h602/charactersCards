@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.characters__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.character__card {
+  background-color: #3C3E44;
+  border-radius: 10px;
+  margin: 2em;
+  width: 20rem;
+  height: 36rem;
+}
+
+
+
+
